@@ -1,0 +1,153 @@
+Estrutura de Arquivos do Projeto
+
+graphql
+Copiar código
+ProjetoLogin
+├── main.py           # Script principal do projeto
+├── DataBaser.py      # Script para configurar e gerenciar o banco de dados
+├── icons
+│   ├── LogoIcon.ico  # Ícone da janela
+│   └── logo.png      # Logotipo que será exibido na interface
+└── users.db          # Arquivo de banco de dados SQLite gerado automaticamente
+Arquivo DataBaser.py
+Este arquivo lida com a conexão ao banco de dados SQLite e cria uma tabela para armazenar os dados dos usuários.
+
+python
+Copiar código
+# DataBaser.py
+import sqlite3
+
+# Conexão com o banco de dados
+conn = sqlite3.connect("users.db")
+cursor = conn.cursor()
+
+# Criar tabela para armazenar os dados dos usuários
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS Users (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Name TEXT NOT NULL,
+    Email TEXT NOT NULL,
+    User TEXT UNIQUE NOT NULL,
+    Password TEXT NOT NULL
+);
+""")
+conn.commit()
+Arquivo main.py
+Este é o script principal que contém a interface gráfica para login e registro de usuários.
+
+python
+Copiar código
+# main.py
+from tkinter import *
+from tkinter import messagebox
+from tkinter import ttk
+import DataBaser
+
+# Configuração da janela principal
+jan = Tk()
+jan.title("Login - Painel de Acesso")
+jan.geometry("600x300")
+jan.configure(background="white")
+jan.resizable(width=False, height=False)
+jan.attributes("-alpha", 0.9)
+jan.iconbitmap(default="icons/LogoIcon.ico")
+
+# Carregar imagem do logotipo
+logo = PhotoImage(file="icons/logo.png")
+
+# Configuração dos Frames
+LeftFrame = Frame(jan, width=200, height=300, bg="MIDNIGHTBLUE", relief="raise")
+LeftFrame.pack(side=LEFT)
+
+RightFrame = Frame(jan, width=395, height=300, bg="MIDNIGHTBLUE", relief="raise")
+RightFrame.pack(side=RIGHT)
+
+# Exibir logotipo
+LogoLabel = Label(LeftFrame, image=logo, bg="MIDNIGHTBLUE")
+LogoLabel.place(x=-50, y=-15)
+
+# Campos de entrada para usuário e senha
+UserLabel = Label(RightFrame, text="Username:", font=("Century Gothic", 20), bg="MIDNIGHTBLUE", fg="white")
+UserLabel.place(x=1, y=100)
+
+UserEntry = ttk.Entry(RightFrame, width=30)
+UserEntry.place(x=175, y=113)
+
+PassLabel = Label(RightFrame, text="Password:", font=("Century Gothic", 20), bg="MIDNIGHTBLUE", fg="white")
+PassLabel.place(x=5, y=150)
+
+PassEntry = ttk.Entry(RightFrame, width=30, show="*")
+PassEntry.place(x=150, y=160)
+
+# Função de Login
+def Login():
+    User = UserEntry.get()
+    Pass = PassEntry.get()
+
+    DataBaser.cursor.execute("""
+    SELECT * FROM Users WHERE User = ? AND Password = ?
+    """, (User, Pass))
+    VerifyLogin = DataBaser.cursor.fetchone()
+
+    if VerifyLogin:
+        messagebox.showinfo(title="Login Info", message="Acesso Confirmado - Bem Vindo!")
+    else:
+        messagebox.showinfo(title="Login Info", message="Acesso Negado - Verifique seu Cadastro no sistema!")
+
+# Botão de Login
+LoginButton = ttk.Button(RightFrame, text="Login", width=30, command=Login)
+LoginButton.place(x=100, y=225)
+
+# Função de Registro
+def Register():
+    LoginButton.place_forget()
+    RegisterButton.place_forget()
+
+    NomeLabel = Label(RightFrame, text="Name:", font=("Century Gothic", 20), bg="MIDNIGHTBLUE", fg="White")
+    NomeLabel.place(x=1, y=10)
+    NomeEntry = ttk.Entry(RightFrame, width=39)
+    NomeEntry.place(x=95, y=24)
+
+    EmailLabel = Label(RightFrame, text="Email:", font=("Century Gothic", 20), bg="MIDNIGHTBLUE", fg="White")
+    EmailLabel.place(x=2, y=50)
+    EmailEntry = ttk.Entry(RightFrame, width=39)
+    EmailEntry.place(x=95, y=66)
+
+    def RegisterToDataBase():
+        Name = NomeEntry.get()
+        Email = EmailEntry.get()
+        User = UserEntry.get()
+        Pass = PassEntry.get()
+
+        if Name == "" or Email == "" or User == "" or Pass == "":
+            messagebox.showerror(title="Register Error", message="Não deixe de preencher todos os campos")
+        else:
+            DataBaser.cursor.execute("""
+            INSERT INTO Users(Name, Email, User, Password) VALUES(?, ?, ?, ?)
+            """, (Name, Email, User, Pass))
+            DataBaser.conn.commit()
+            messagebox.showinfo(title="Register Info", message="Conta Criada Com Sucesso")
+
+    RegisterButton = ttk.Button(RightFrame, text="Register", width=30, command=RegisterToDataBase)
+    RegisterButton.place(x=100, y=225)
+
+    BackButton = ttk.Button(RightFrame, text="Back", width=20, command=BackToLogin)
+    BackButton.place(x=125, y=260)
+
+def BackToLogin():
+    for widget in RightFrame.winfo_children():
+        widget.place_forget()
+
+    UserLabel.place(x=1, y=100)
+    UserEntry.place(x=175, y=113)
+    PassLabel.place(x=5, y=150)
+    PassEntry.place(x=150, y=160)
+    LoginButton.place(x=100, y=225)
+    RegisterButton.place(x=125, y=260)
+
+# Botão para abrir o formulário de registro
+RegisterButton = ttk.Button(RightFrame, text="Register", width=20, command=Register)
+RegisterButton.place(x=125, y=260)
+
+# Iniciar a janela
+jan.mainloop()

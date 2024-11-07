@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Futuro</title>
+  <!-- Link correto para o CSS, verifique se o nome do arquivo está certo -->
+  <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+
+  <!-- Inclua o mesmo cabeçalho da sua página principal -->
+  <header>
+    <a href="index.html" class="logo">Jefte Lima</a>
+    <div class="nav">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#portfolio">Portfolio</a>
+      <a href="index.html#about">About</a>
+    </div>
+    
+    <div class="menu-hamburguer">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+  
+    <div class="nav-responsive">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#portfolio">Portfolio</a>
+      <a href="index.html#about">About</a>
+    </div>
+  </header>
+  
+  <!-- Conteúdo do projeto específico -->
+  <section class="project-details">
+    <h1><span> Espaço destinado</span></h1>
+
+    <!-- Dashboard inserido diretamente -->
+    <div class="pdf-item">
+        <h2>Para apresentar futuros projetos - Projetos em andamento !</h2>
+        <!-- Dashboard Power BI -->
+        <div class="dashboard-container">
+            <iframe title="Primeiro-Dash" src=tOTZhZGNmMjBiMDcwIiwidCI6ImVlOWNhMzg2LTAxOGUtNDUwMC04NGMzLWE5OWM3OWVjMTNkMyJ9" frameborder="0" allowfullscreen="true"></iframe>
+        </div>
+        
+        <!-- Mantém o botão para download do pbix -->
+        <a href="pdfs/****" download class="btn">Baixar Projeto</a>
+    </div>
+
+
+</section>
+
+<section>
+  <div>
+    <h2>Em breve</h2>
+
+<p>
+  **************************<br>
+  **************************<br>
+</p>
+
+<h3>**************************</h3>
+
+<ul style="margin-bottom: 15px;">
+  <li style="margin-bottom: 10px;">
+    <strong>**************************</strong> 
+    <span>**************************</span>
+  </li>
+  <li style="margin-bottom: 10px;">
+    <strong>**************************:</strong> 
+    <span>**************************.</span>
+  </li>
+  <li style="margin-bottom: 10px;">
+    <strong>**************************</strong> 
+    <span>**************************.</span>
+  </li>
+  <li style="margin-bottom: 10px;">
+    <strong>**************************</strong> 
+    <span>**************************</span>
+  </li>
+  <li style="margin-bottom: 10px;">
+    <strong>**************************</strong> <br>
+    <span><strong>**************************</strong> **************************</span> <br>
+    <span><strong>**************************</strong> **************************</span> <br>
+    <span><strong>**************************</strong> **************************</span>
+  </li>
+</ul>
+
+<h3>**************************</h3>
+
+<p>
+  ************************** 
+  (<span>**************************</span>, <span>**************************</span>, <span>**************************/************************** 
+    **************************.
+</p>
+
+
+  </div>
+</section>
+  <!-- Inclua o mesmo rodapé da página principal -->
+   <!-- Rodapé igual ao da página principal -->
+   <footer>
+    <p>Contact: <span>jefte.lima.silva@gmail.com</span>/ Copyright &copy; 2024 by &lt;/Jefte&gt;. All Rights Reserved.</p>
+  </footer>
+  
+  <!-- Adicione o script aqui -->
+  <script>
+    const menuHamburguer = document.querySelector('.menu-hamburguer');
+    const navResponsive = document.querySelector('.nav-responsive');
+  
+    menuHamburguer.addEventListener('click', () => {
+      menuHamburguer.classList.toggle('change');
+      navResponsive.classList.toggle('nav-visible');  // Adiciona ou remove a classe que exibe o menu
+    });
+  </script>
+
+<script>
+  const img = document.querySelector('.pdf-item img');
+  
+  img.addEventListener('click', () => {
+    img.classList.toggle('zoomed');
+  });
+</script>
+
+  </body>
+  </html>
+  

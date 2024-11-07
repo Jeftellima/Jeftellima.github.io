@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos</title>
+  <link rel="stylesheet" href="css/style.css"> <!-- Certifique-se de que o CSS está linkado corretamente -->
+</head>
+<body>
+
+  <!-- Cabeçalho igual ao da página principal -->
+  <header>
+    <a href="index.html" class="logo">Jefte lima</a>
+    <div class="nav">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#portfolio">Portfolio</a>
+      <a href="index.html#about">About</a>
+    </div>
+  
+    <div class="menu-hamburguer">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+  
+    <!-- Adicione o menu responsivo aqui -->
+    <div class="nav-responsive">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#portfolio">Portfolio</a>
+      <a href="index.html#about">About</a>
+    </div>
+  </header>
+  
+
+  <!-- Conteúdo da página com múltiplos PDFs -->
+  <section class="project-details">
+    <h1>Meus Certificados</h1>
+    <p>Abaixo estão os certificados dos cursos que completei.</p>
+    
+  <!-- Certificado 1 -->
+  <div class="pdf-item">
+    <h3>Certificado de Java Básico</h3>
+    <img src="img/java_basico.png" alt="Certificado de Java Básico">
+    <a href="pdfs/java basico.pdf" download class="btn">Baixar Certificado</a>
+  </div>
+  
+
+  <!-- Certificado 2-->
+  <div class="pdf-item">
+    <h3>Certificado de C e C++</h3>
+    <img src="img/Certificado C e C++.png" alt="Certificado de C e C++">
+    <a href="pdfs/Cerfiticado curso C e C++.pdf" download class="btn">Baixar Certificado</a>
+  </div>
+  
+
+  <!-- Certificado 3 -->
+  <div class="pdf-item">
+    <h3>Certificado de Git e Github Formação Básica</h3>
+    <img src="img/Certificado Git e Github basico.png" alt="Certificado de Git e Github Formação Básica">
+    <a href="pdfs/Certificado_Git e GitHub Formacao Basica.pdf" download class="btn">Baixar Certificado</a>
+  </div>
+  
+
+  <!-- Certificado 4 -->
+  <div class="pdf-item">
+    <h3>Certificado de Gestão Agil no Trabalho</h3>
+    <img src="img/gestao_agil.png" alt="Certificado de Gestão Agil no Trabalho">
+    <a href="pdfs/Gestão_Agil_no_Trabalho.pdf" download class="btn">Baixar Certificado</a>
+  </div>
+ 
+    <!-- Certificado 5 -->
+    <div class="pdf-item">
+      <h3>Certificado SQL Server Formação Básica</h3>
+      <!-- Exibe a imagem ao invés do PDF -->
+      <img src="img/sql basico.png" alt="Certificado SQL Server Formação Básica">
+      
+      <!-- Mantém o botão para download do PDF -->
+      <a href="pdfs/SQL Server Formacao Basica.pdf" download class="btn">Baixar Certificado</a>
+    </div>
+    
+    
+    <!-- Certificado 6-->
+  <div class="pdf-item">
+    <h3>Certificado HTML Formação Básica</h3>
+    <img src="img/html formacao basica.png" alt="Certificado HTML Formação Básica">
+    <a href="pdfs/HTML Formacao Basica.pdf" download class="btn">Baixar Certificado</a>
+  </div>
+  
+  <!-- Certificado 7 -->
+  <div class="pdf-item">
+    <h3>Certificado CSS Básico</h3>
+    <img src="img/CSS basico.png" alt="Certificado CSS Básico">
+    <a href="pdfs/CSS_Basico.pdf" download class="btn">Baixar Certificado</a>
+  </div>
+  
+  <!-- Certificado 8-->
+  <div class="pdf-item">
+    <h3>Certificado Python Básico</h3>
+    <img src="img/Python basico.png" alt="Certificado Python Básico">
+    <a href="pdfs/Python basico.pdf" download class="btn">Baixar Certificado</a>
+  </div>
+  
+  <!-- Certificado 9 -->
+  <div class="pdf-item">
+    <h3>Certificado Liderando Mudanças</h3>
+    <img src="img/Liderando mudanças.png" alt="Certificado Liderando Mudanças">
+    <a href="pdfs/liderando_mudancas.pdf" download class="btn">Baixar Certificado</a>
+  </div>
+  
+  <!-- Certificado 10 -->
+  <div class="pdf-item">
+    <h3>Certificado Como se Comunicar com Diplomacia e Tato</h3>
+    <img src="img/como se comunicar.png" alt="Certificado Como se Comunicar com Diplomacia e Tato">
+    <a href="pdfs/como se comunicar com diplomacia e tato.pdf" download class="btn">Baixar Certificado</a>
+  </div>
+</section>
+
+  </section>
+
+  <!-- Rodapé igual ao da página principal -->
+  <footer>
+    <p>Contact: <span>jefte.lima.silva@gmail.com</span>/ Copyright &copy; 2024 by &lt;/Jefte&gt;. All Rights Reserved.</p>
+  </footer>
+  
+  <!-- Adicione o script aqui -->
+  <script>
+    const menuHamburguer = document.querySelector('.menu-hamburguer');
+    const navResponsive = document.querySelector('.nav-responsive');
+  
+    menuHamburguer.addEventListener('click', () => {
+      menuHamburguer.classList.toggle('change');
+      navResponsive.classList.toggle('nav-visible');  // Adiciona ou remove a classe que exibe o menu
+    });
+  </script>
+  </body>
+  </html>
+  
