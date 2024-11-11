@@ -3,7 +3,8 @@
 Bem-vindo ao meu portfólio pessoal!
 Este portfólio é o resultado de uma trilha de aprendizado cuidadosamente planejada para consolidar minhas habilidades em desenvolvimento web e programação. Ao longo dessa jornada, busquei aprimorar meu entendimento e prática em HTML, CSS e JavaScript, aplicando cada conhecimento adquirido na criação de um portfólio completo e funcional.
 
-Segui uma trilha de aprendizado específica que me guiou passo a passo na construção deste projeto, disponível nesta playlist, que foi fundamental para o desenvolvimento das funcionalidades e do design que implementei.
+Segui uma trilha de aprendizado específica que me guiou passo a passo na construção deste projeto, disponível nesta playlist:
+https://www.youtube.com/playlist?list=PLDIbjIlhRaxNiOXcpnRUe1klzo0OO5kHO
 
 Essa abordagem baseada em uma trilha me permitiu transformar teoria em prática, com cada etapa reforçando as anteriores. Assim, este portfólio é uma expressão direta do progresso que alcancei e dos fundamentos sólidos que estou construindo para minha carreira na tecnologia.
 
