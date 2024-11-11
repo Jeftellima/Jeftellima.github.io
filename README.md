@@ -1,6 +1,16 @@
 # Portfólio Pessoal - Jefte Lima
 
-Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido com o objetivo de compartilhar minha trajetória, habilidades e projetos, além de facilitar o contato com quem tiver interesse em colaborar ou trocar ideias sobre tecnologia.
+Bem-vindo ao meu portfólio pessoal!
+Este portfólio é o resultado de uma trilha de aprendizado cuidadosamente planejada para consolidar minhas habilidades em desenvolvimento web e programação. Ao longo dessa jornada, busquei aprimorar meu entendimento e prática em HTML, CSS e JavaScript, aplicando cada conhecimento adquirido na criação de um portfólio completo e funcional.
+
+Cada seção do site — desde o design responsivo até as funcionalidades interativas — representa uma etapa no meu desenvolvimento. Ao avançar na trilha de aprendizado, fui integrando novos conhecimentos e aprimorando a estrutura do projeto, incluindo boas práticas de organização de código e acessibilidade.
+
+Essa abordagem baseada em uma trilha me permitiu transformar teoria em prática, com cada etapa reforçando as anteriores. Assim, este portfólio é uma expressão direta do progresso que alcancei e dos fundamentos sólidos que estou construindo para minha carreira na tecnologia.
+
+
+
+
+Bem-vindo ao meu portfólio pessoal!
 
 ## Índice
 - [Visão Geral](#visão-geral)
