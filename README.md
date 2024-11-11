@@ -29,21 +29,8 @@ A página inclui seções sobre mim, meus serviços e projetos, além de um espa
 - **Box Icons**: Ícones de redes sociais e serviços.
 - **Python (projetos específicos)**: Backend de projetos listados no portfólio.
 
-** Estrutura do Projeto**
-├── index.html             # Página principal
-├── css/
-│   └── style.css          # Arquivo de estilos
-├── js/
-│   └── script.js          # Script para interatividade
-├── img/                   # Imagens usadas no portfólio
-├── pdfs/
-│   └── Curriculo_jefte.pdf # CV para download
-└── projeto1.html          # Página para projeto em Python
 
 Contato
 Email: jefte.lima.silva@gmail.com
-LinkedIn: linkedin.com/in/jeftesilvalima
-Instagram: @jeff.llima
-GitHub: github.com/Jeftellima
 
-Este projeto é uma representação da minha dedicação e compromisso com o aprendizado constante. Sinta-se à vontade para explorar e entrar em contato para eventuais colaborações ou oportunidades de aprendizado!
+Este projeto é uma representação da minha dedicação e compromisso com o aprendizado constante. Sinta-se à vontade para explorar e entrar em contato para eventuais colaborações ou oportunidades de aprendizado! Um grande abraço !!!
