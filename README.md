@@ -16,10 +16,6 @@ Essa abordagem baseada em uma trilha me permitiu transformar teoria em prática,
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Contato](#contato)
 
-## Visão Geral
-Este portfólio apresenta os projetos e habilidades que tenho desenvolvido ao longo de minha carreira e estudos em Análise e Desenvolvimento de Sistemas. Nele, compartilho também certificados que conquistaram um papel importante em minha jornada de aprendizado. 
-
-
 ## Funcionalidades
 - **Seção Home**: Introdução com uma breve apresentação pessoal e um botão para download do currículo.
 - **Serviços**: Descrição dos serviços que ofereço e um link para projetos específicos, como meu portal de acesso e registro e meus cursos concluídos.
