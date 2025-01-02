@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto 1</title>
+  <title>Crud Python</title>
   <!-- Link correto para o CSS, verifique se o nome do arquivo está certo -->
   <link rel="stylesheet" href="css/style.css"> 
 </head>
@@ -35,72 +35,48 @@
 
 <!-- Seção de Detalhes do Projeto -->
 <section class="project-overview">
-  <h1>Detalhes do Sistema de login em Python</h1>
-  <p>O objetivo deste projeto é criar uma interface gráfica para autenticação e cadastro de usuários com <br>armazenamento seguro em banco de dados. Abaixo, você pode conferir o vídeo de funcionamento e<br> o script utilizado para este projeto.</p>
+  <h1>Detalhes do Sistema de crud agenda telefonica em Python</h1>
+  <p>O objetivo deste projeto é Administrar usuários. O aplicativo permite ao usuário adicionar, atualizar, deletar e procurar contatos, bem como visualizar os dados em uma tabela.</p>
 
   <!-- Vídeo de funcionamento -->
   <h3>Vídeo de Funcionamento:</h3>
   <video width="600" controls>
-    <source src="videos/funcionamento.mp4.mp4" type="video/mp4"> <!-- Coloque o caminho correto do vídeo -->
+    <source src="videos/crudpython.mp4" type="video/mp4"> <!-- Coloque o caminho correto do vídeo -->
   </video>
 
   <!-- Botão para visualizar ou baixar o script -->
   <h3>Script do Projeto:</h3>
-  <a href="scripts/scripts.py.zip" download class="btn" >Baixar Script</a> <!-- Botão de Download do Script -->
+  <a href="scripts/agenda_python-main.zip" download class="btn" >Baixar Script</a> <!-- Botão de Download do Script -->
 
-  <a href="https://github.com/Jeftellima/Login_Senha" target="_blank" class="btn">Arquivo GitHub</a> <!-- Botão para Visualizar Script -->
+  <a href="https://github.com/Jeftellima/agenda_python" target="_blank" class="btn">Arquivo GitHub</a> <!-- Botão para Visualizar Script -->
 </section>
 
 <Section>
 
   <div>
-     <h3>Funcionamento do <span>Sistema de Login e Cadastro de Usuários com Interface Gráfica em Python</span></h3>
+     <h3>TECNOLOGIAS<span>UTILIZADAS</span></h3>
      <p>
-      Tela de Cadastro com Python e SQLite:<br><br>
+      Python 3.x Tkinter (Biblioteca para interface gráfica) Biblioteca messagebox para alertas e notificações<br> Estrutura de dados personalizada (presumivelmente no módulo dados.py)<br><br>
       Este projeto foi desenvolvido durante minhas aulas de Python na plataforma Udemy no endereço eletronico https://www.udemy.com/course/sistema-login-python-sqlite-tkinter/learn/lecture/14925846#overview onde aprendi a Criar Interface Gráfica de Usuário (GUI) Com Tkinter.<br><br>
       
-      Passo a Passo do Projeto:<br>
-      <span>Passo 1:</span> Entrar no sistema<br><br>
       
-      Ao abrir o sistema, você verá uma tela com dois painéis: o logotipo do sistema no lado esquerdo e, à direita, os campos para login e cadastro<br>
-      <pre><code>
-    Username
-    Password
       </code></pre><br>
       
-      <span>Passo 2:</span> Fazer login no sistema<br><br>
+      <span>FUNCIONALIDADE:</span><br><br>
     
-A -No painel direito, você verá dois campos: Username e Password.<br>
-B -Digite seu nome de usuário no campo “Username” e sua senha no campo “Password”.<br>
-C -Obs: A senha aparecerá como asteriscos (*) para manter sua privacidade.<br>
-D -Clique no botão “Login” para tentar acessar o sistema.<br>
-E -Se o login for bem-sucedido, você verá uma mensagem de boas-vindas.<br>
-F -Caso o login não seja bem-sucedido, verifique suas informações e tente novamente.<br><br>
+A -Abrir a Agenda: Ao iniciar o programa, a interface gráfica será carregada. .<br>
+B -Adicionar um Novo Contato: Preencha os campos de Nome, Gênero, Telefone e Email. Clique no botão "Adicionar" para salvar o contato. Atualizar Contato: .<br>
+C -Selecione um contato na tabela e clique no botão "Atualizar". Modifique os campos desejados e clique em "Confirmar"..<br>
+D -Deletar Contato: Selecione um contato na tabela e clique em "Deletar". Procurar Contato: Digite o telefone do contato e clique em "Procurar" para visualizar o registro.<br><br>
+
     
-      <span>Passo 3:</span> Cadastrar-se no Sistema (Caso Ainda Não Tenha Realizado o registro)<br><br>
     
-A -Se você ainda não tem uma conta, clique no botão “Register” (Registrar) na parte inferior do painel.<br>
-B - tela mudará para um formulário de cadastro. Preencha os seguintes campos:
-Name: Seu nome completo.
-Email: Seu endereço de e-mail.
-Username: O nome de usuário que você deseja criar.
-Password: Uma senha de sua escolha.<br>
-C -Depois de preencher todos os campos, clique no botão “Register” (Registrar).<br>
-D -Se todas as informações estiverem corretas, você verá uma mensagem confirmando que sua conta foi criada com sucesso..<br><br>
+      <span>Dicas Importantes:</span> sistema de login><br><br>
     
-      <span>Passo 4:</span> Retornar à Tela de Login<br><br>
+      Certifique-se de que esteja usando:Python 3.x instalado.<br>
+      Tkinter (geralmente já incluído na instalação do Python).<br><br>
     
-      A -Após o registro, clique no botão “Back” (Voltar) para retornar à tela inicial de login.<br>
-      B -A Tela mudará para um formulário de cadastro. Preencha os seguintes campos:
-      Agora você pode usar o nome de usuário e a senha criados para acessar o sistema..<br><br>
-    
-      <span>Dicas Importantes:</span> sistema de loginbr><br>
-    
-A -Esqueceu a senha?: Neste sistema, não há recuperação de senha automática. Se necessário, consulte o administrador do sistema.<br>
-B -Preenchimento Completo: Certifique-se de que todos os campos estão preenchidos ao se registrar, para evitar mensagens de erro.<br>
-C -Saída do Sistema: Para sair, basta fechar a janela.<br><br>
-    
-Desenvolvendo esse código, aprendi a manipular interfaces gráficas com o Tkinter e a gerenciar dados de usuários usando o SQLite. Essa experiência aprimorou minhas habilidades em autenticação e criação de formulários de cadastro.<br><br>
+<br><br>
     </p>
     
   
